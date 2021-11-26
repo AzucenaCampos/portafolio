@@ -1,0 +1,225 @@
+a {
+  color: #3f225a;
+  text-decoration: none;
+}
+
+a :hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+  color: #735196;
+}
+
+body {
+  background-color: rgba(202, 210, 247, 0.863);
+  text-align: center;
+  font-family: cursive;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.line {
+  top: 50%;
+  width: 16em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.anim-typewriter {
+  -webkit-animation: 5s typewriter steps(18) 1s normal both, blinkTextCursor 500ms steps(18) infinite normal;
+          animation: 5s typewriter steps(18) 1s normal both, blinkTextCursor 500ms steps(18) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(8, 8, 8, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(8, 8, 8, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+.container {
+  height: auto;
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.container h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  text-shadow: 3px 3px 6px #331d47;
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1100px) {
+  .container h2 {
+    font-size: 2rem;
+  }
+}
+
+.container h3 {
+  font-size: 2rem;
+}
+
+.container ul {
+  padding: 10px;
+}
+
+.container ul :hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+.container ul li {
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 5.5rem;
+  margin: 0.5rem;
+  list-style: none;
+  color: #10071d;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .container ul li {
+    font-size: 3rem;
+  }
+}
+
+.container ul li i {
+  color: #30073d;
+}
+
+.container ul li p {
+  font-size: 1rem;
+  color: #190a1f;
+  text-shadow: 3px 3px 6px black;
+}
+
+.container .cv {
+  background-color: #a53e9c;
+  padding: 1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+
+.container .cv a {
+  color: #efd5f1;
+}
+
+.container form {
+  width: 90%;
+  text-align: left;
+}
+
+.container form div {
+  margin: 5px;
+  padding: 5px;
+}
+
+.container form div input {
+  border-radius: 10px;
+  background-color: rgba(241, 226, 243, 0.671);
+}
+
+.container form div input .email {
+  margin-right: 5px;
+}
+
+.contacto {
+  position: fixed;
+  top: 200px;
+  margin-left: 0.5rem;
+  -webkit-transition: all 700ms ease;
+  transition: all 700ms ease;
+}
+
+@media (max-width: 1100px) {
+  .contacto {
+    top: 2px;
+    position: static;
+    margin-left: 0.2rem;
+    text-align: left;
+  }
+}
+
+.contacto ul li {
+  font-size: 4rem;
+  margin: 0.5rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .contacto ul li {
+    display: inline;
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .contacto ul li {
+    display: inline;
+    font-size: 3rem;
+  }
+}
+
+.container-footer {
+  border-radius: 10px;
+  height: auto;
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.container-footer p {
+  margin: 0px;
+}
+/*# sourceMappingURL=style.css.map */
